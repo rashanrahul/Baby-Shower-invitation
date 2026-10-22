@@ -10,14 +10,14 @@
 const CONFIG = {
   eventDate: "Sunday, 15 November 2026",
   eventTime: "2:00 PM – 5:00 PM",
-  venueName: "Your Venue Name",
-  venueAddress: "Your full venue address, Sri Lanka",
+  venueName: "Shangri-La",
+  venueAddress: "Shangri-La Colombo, Sri Lanka",
 
   // Enter the recipient's real WhatsApp number.
   rsvpPhone: "94701937390",
 
   // Paste the full Google Maps URL for your venue.
-  mapUrl: "https://maps.google.com/"
+  mapUrl: "https://www.google.com/maps/place/Shangri-La+Colombo/@6.9285407,79.8418613,17z/data=!4m9!3m8!1s0x3ae2593b09364c4f:0x7dc13fa1f24d5c16!5m2!4m1!1i2!8m2!3d6.9285354!4d79.8444362!16s%2Fg%2F11g9mhzr8y?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
 };
 
 // Populate the event information.
