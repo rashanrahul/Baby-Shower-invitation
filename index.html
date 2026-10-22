@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8eee0" />
+  <title>Baby Shower Invitation 🧸</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background music -->
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button id="musicButton" class="music-button" type="button"
+          aria-label="Play background music">
+    ♫ Music
+  </button>
+
+  <main class="invitation">
+
+    <!-- PAGE 1: Click the envelope to open the letter -->
+    <section id="welcomeScreen" class="screen active">
+      <div class="decoration">☁️ 🧸 ☁️</div>
+      <p class="eyebrow">A LITTLE BUNDLE OF JOY IS ON THE WAY</p>
+      <h1>You're Invited!</h1>
+      <p class="subtitle">A special celebration is waiting for you</p>
+
+      <button id="envelopeButton" class="envelope-button"
+              type="button" aria-label="Open your invitation letter">
+        <span class="envelope">
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♥</span>
+          <span class="envelope-letter">💌</span>
+        </span>
+      </button>
+
+      <p class="tap-message">Tap the envelope to open your letter 💌</p>
+      <div class="teddy">🧸</div>
+    </section>
+
+    <!-- PAGE 2: Invitation letter -->
+    <section id="letterScreen" class="screen letter-screen">
+      <div class="letter-card">
+        <span class="small-icon">🧸 🤎 🧸</span>
+        <p class="eyebrow">WITH LOVE AND HAPPINESS</p>
+        <h2>A Little One Is On The Way!</h2>
+
+        <p class="letter-text">
+          With hearts full of love and excitement,
+          we invite you to join us for a special celebration
+          as we prepare to welcome our little bundle of joy.
+        </p>
+
+        <p class="letter-text">
+          Your presence, love, and blessings will make this
+          beautiful day even more memorable.
+        </p>
+
+        <p class="love-note">We can't wait to celebrate with you! 🤎</p>
+
+        <button id="showDetailsButton" class="primary-button" type="button">
+          View Celebration Details →
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: Event details and RSVP -->
+    <section id="detailsScreen" class="screen details-screen">
+      <div class="details-card">
+        <div class="teddy-large">🧸</div>
+        <p class="eyebrow">PLEASE JOIN US TO CELEBRATE</p>
+        <h2>Baby Shower</h2>
+        <p class="subtitle">A tiny miracle, a lifetime of love 🤎</p>
+
+        <div class="event-details">
+          <div class="detail-item">
+            <span class="detail-icon">📅</span>
+            <div>
+              <strong>Date</strong>
+              <p id="eventDate">Please update the date</p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-icon">🕒</span>
+            <div>
+              <strong>Time</strong>
+              <p id="eventTime">Please update the time</p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong>Venue</strong>
+              <p id="venueName">Please update the venue</p>
+              <p id="venueAddress" class="venue-address"></p>
+            </div>
+          </div>
+        </div>
+
+        <button id="mapButton" class="secondary-button" type="button">
+          📍 Get Directions
+        </button>
+
+        <div class="divider"></div>
+
+        <h3>Will You Join Us? 💌</h3>
+        <p class="rsvp-description">
+          Please let us know if you can celebrate with us.
+        </p>
+
+        <form id="rsvpForm">
+          <label for="guestName">Your name</label>
+          <input
+            id="guestName"
+            name="guestName"
+            type="text"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+            maxlength="100"
+          />
+
+          <label for="attendance">Your response</label>
+          <select id="attendance" name="attendance" required>
+            <option value="">Please select</option>
+            <option value="Yes, I will attend">Yes, I'll be there! 🎉</option>
+            <option value="Sorry, I cannot attend">Sorry, I can't attend</option>
+          </select>
+
+          <label for="guestCount">Number of guests (including you)</label>
+          <select id="guestCount" name="guestCount" required>
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+          </select>
+
+          <button class="whatsapp-button" type="submit">
+            <span>☘</span> Confirm via WhatsApp
+          </button>
+        </form>
+
+        <p class="privacy-note">
+          WhatsApp will open with your RSVP message ready to send.
+          Please press Send to confirm.
+        </p>
+
+        <button id="backToLetterButton" class="text-button" type="button">
+          ← Back to the letter
+        </button>
+      </div>
+    </section>
+
+    <footer>Made with love for a little miracle 🤎</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
